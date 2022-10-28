@@ -1,0 +1,105 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  color: white;
+  font-family: Big Shoulders Display;
+}
+p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+}
+button {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 10px;
+  outline: none;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.main-container {
+  /*   border:2px solid red; */
+  position: absolute;
+  width: 80%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.dflex {
+  display: flex;
+  border-radius: 20px;
+}
+.col-1,
+.col-2,
+.col-3 {
+  padding: 1.5em;
+}
+.col-1 p,
+.col-2 p,
+.col-3 p {
+  margin: 1em 0 4em 0;
+}
+.col-1 {
+  background-color: #e28525;
+}
+.col-2 {
+  background-color: #016972;
+}
+.col-3 {
+  background-color: #00403f;
+}
+
+/*grid.html  */
+.grid-wrapper {
+  width: 100%;
+  background-color: black;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+}
+.box1 {
+  background-color: #eb5020;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.box2 {
+  background-color: #ffa401;
+  grid-row: 1 / span 2;
+}
+
+.box3 {
+  background-color: #05aa42;
+  grid-row: span 2;
+}
+
+.box4 {
+  background-color: #01aefd;
+  grid-column: span 2;
+
+  /*   grid-column: .5 / span 2; */
+}
+
+.box5 {
+  /*   grid-column:2/span 3 */
+  grid-column: span 2;
+
+  background-color: #01aefd;
+}
+.page-link {
+  margin-bottom: 1em;
+  border-radius: 10px;
+  padding: 1em;
+}
+.page-link a {
+  text-decoration: none;
+}
